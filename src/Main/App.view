@@ -1,0 +1,171 @@
+App Vertical
+  alignItems center
+  flexGrow 1
+  flexShrink 1
+  flexBasis auto
+  justifyContent center
+  height 100vh
+  LoggedIn_MainView Vertical
+    width 100%
+    height 100%
+    Header Horizontal
+      height 8%
+      width 100%
+      borderBottomStyle solid
+      borderBottomWidth 1
+      borderBottomColor #666666
+      BackButton Horizontal
+        width 60
+        height 100%
+        Back
+          height 80%
+          width 80%
+          alignSelf center
+
+
+      SearchForm Horizontal
+        flexBasis auto
+        flexGrow 1
+        flexShrink 1
+        SearchText CaptureText
+          alignSelf stretch
+          borderWidth 1
+          borderStyle solid
+          borderColor #323232
+          borderTopRightRadius 4
+          borderTopLeftRadius 4
+          borderBottomRightRadius 4
+          borderBottomLeftRadius 4
+          color #323232
+          fontFamily Montserrat
+          fontSize 16
+          fontWeight 400
+          paddingLeft 8
+          paddingRight 8
+          paddingTop 4
+          placeholder Search
+          onChange <
+          value <
+          width 80%
+          height 85%
+          paddingBottom 4
+          marginTop auto
+          marginBottom auto
+          when <isPlaceholder
+          color #646464
+
+        SearchButton Horizontal
+          flexBasis auto
+          flexGrow 1
+          flexShrink 1
+          MagnifyingGlass
+            width 80%
+            height 80%
+            alignSelf center
+            marginLeft 5
+
+
+
+
+    CategoryBar Horizontal
+      width 100%
+      height 7%
+      borderBottomColor #666666
+      borderBottomWidth 1
+      borderBottomStyle solid
+      All Horizontal
+        width 16.6%
+        alignItems center
+        justifyContent center
+        Text
+          color #323232
+          fontFamily Montserrat
+          fontSize 80%
+          fontWeight 500
+          text All
+
+
+      Locations Horizontal
+        width 16.6%
+        alignItems center
+        justifyContent center
+        Text
+          color #323232
+          fontFamily Montserrat
+          fontSize 80%
+          fontWeight 500
+          text Locations
+
+
+      Talent Horizontal
+        width 16.6%
+        alignItems center
+        justifyContent center
+        Text
+          color #323232
+          fontFamily Montserrat
+          fontSize 80%
+          fontWeight 500
+          text Talent
+
+
+      Crew Horizontal
+        width 16.6%
+        alignItems center
+        justifyContent center
+        Text
+          color #323232
+          fontFamily Montserrat
+          fontSize 80%
+          fontWeight 500
+          text Crew
+
+
+      Gear Horizontal
+        width 16.6%
+        justifyContent center
+        alignItems center
+        Text
+          color #323232
+          fontFamily Montserrat
+          fontSize 80%
+          fontWeight 500
+          text Gear
+
+
+      Props Horizontal
+        width 16.6%
+        justifyContent center
+        alignItems center
+        Text
+          color #323232
+          fontFamily Montserrat
+          fontSize 80%
+          fontWeight 500
+          text Props
+
+
+
+    MainDisplay Horizontal
+      width 100%
+      height 30%
+      backgroundColor #999999
+
+    MainDisplayControl Horizontal
+      width 100%
+      height 7%
+      backgroundColor #000000
+
+    UserExtendedCard Vertical
+      overflowX scroll
+      width 100%
+      height 40%
+      backgroundColor #666666
+
+    FooterNav Horizontal
+      width 100%
+      height 8%
+      borderTopWidth 1
+      borderTopStyle solid
+      borderTopColor #666666
+      backgroundColor #3c3c3c
