@@ -5,167 +5,239 @@ App Vertical
   flexBasis auto
   justifyContent center
   height 100vh
-  LoggedIn_MainView Vertical
+  width 100%
+  height 100%
+  Header Horizontal
+    height 8%
     width 100%
-    height 100%
-    Header Horizontal
-      height 8%
-      width 100%
-      borderBottomStyle solid
-      borderBottomWidth 1
-      borderBottomColor #666666
-      BackButton Horizontal
-        width 60
-        height 100%
-        Back
-          height 80%
-          width 80%
-          alignSelf center
+    borderBottomStyle solid
+    borderBottomWidth 1
+    borderBottomColor #666666
+    BackButton Horizontal
+      width 60
+      height 100%
+      Back
+        height 80%
+        width 80%
+        alignSelf center
 
 
-      SearchForm Horizontal
+    SearchForm Horizontal
+      flexBasis auto
+      flexGrow 1
+      flexShrink 1
+      SearchText CaptureText
+        alignSelf stretch
+        borderWidth 1
+        borderStyle solid
+        borderColor #323232
+        borderTopRightRadius 4
+        borderTopLeftRadius 4
+        borderBottomRightRadius 4
+        borderBottomLeftRadius 4
+        color #323232
+        fontFamily Montserrat
+        fontSize 16
+        fontWeight 400
+        paddingLeft 8
+        paddingRight 8
+        paddingTop 4
+        placeholder Search
+        onChange <
+        value <
+        width 80%
+        height 85%
+        paddingBottom 4
+        marginTop auto
+        marginBottom auto
+        when <isPlaceholder
+        color #646464
+
+      SearchButton Horizontal
         flexBasis auto
         flexGrow 1
         flexShrink 1
-        SearchText CaptureText
-          alignSelf stretch
-          borderWidth 1
-          borderStyle solid
-          borderColor #323232
-          borderTopRightRadius 4
-          borderTopLeftRadius 4
-          borderBottomRightRadius 4
-          borderBottomLeftRadius 4
-          color #323232
-          fontFamily Montserrat
-          fontSize 16
-          fontWeight 400
-          paddingLeft 8
-          paddingRight 8
-          paddingTop 4
-          placeholder Search
-          onChange <
-          value <
+        MagnifyingGlass
           width 80%
-          height 85%
-          paddingBottom 4
-          marginTop auto
-          marginBottom auto
-          when <isPlaceholder
-          color #646464
-
-        SearchButton Horizontal
-          flexBasis auto
-          flexGrow 1
-          flexShrink 1
-          MagnifyingGlass
-            width 80%
-            height 80%
-            alignSelf center
-            marginLeft 5
+          height 80%
+          alignSelf center
+          marginLeft 5
 
 
 
 
-    CategoryBar Horizontal
-      width 100%
-      height 7%
-      borderBottomColor #666666
-      borderBottomWidth 1
-      borderBottomStyle solid
-      All Horizontal
-        width 16.6%
-        alignItems center
-        justifyContent center
-        Text
-          color #323232
-          fontFamily Montserrat
-          fontSize 80%
-          fontWeight 500
-          text All
+  CategoryBar Horizontal
+    width 100%
+    height 7%
+    borderBottomColor #666666
+    borderBottomWidth 1
+    borderBottomStyle solid
+    All Horizontal
+      width 16.6%
+      alignItems center
+      justifyContent center
+      Text
+        color #323232
+        fontFamily Montserrat
+        fontSize 80%
+        fontWeight 500
+        text All
 
 
-      Locations Horizontal
-        width 16.6%
-        alignItems center
-        justifyContent center
-        Text
-          color #323232
-          fontFamily Montserrat
-          fontSize 80%
-          fontWeight 500
-          text Locations
+    Locations Horizontal
+      alignItems center
+      justifyContent center
+      width 16.6%
+      Text
+        color #323232
+        fontFamily Montserrat
+        fontSize 80%
+        fontWeight 500
+        text Locations
 
 
-      Talent Horizontal
-        width 16.6%
-        alignItems center
-        justifyContent center
-        Text
-          color #323232
-          fontFamily Montserrat
-          fontSize 80%
-          fontWeight 500
-          text Talent
+    Talent Horizontal
+      width 16.6%
+      alignItems center
+      justifyContent center
+      Text
+        color #323232
+        fontFamily Montserrat
+        fontSize 80%
+        fontWeight 500
+        text Talent
 
 
-      Crew Horizontal
-        width 16.6%
-        alignItems center
-        justifyContent center
-        Text
-          color #323232
-          fontFamily Montserrat
-          fontSize 80%
-          fontWeight 500
-          text Crew
+    Crew Horizontal
+      width 16.6%
+      alignItems center
+      justifyContent center
+      Text
+        color #323232
+        fontFamily Montserrat
+        fontSize 80%
+        fontWeight 500
+        text Crew
 
 
-      Gear Horizontal
-        width 16.6%
-        justifyContent center
-        alignItems center
-        Text
-          color #323232
-          fontFamily Montserrat
-          fontSize 80%
-          fontWeight 500
-          text Gear
+    Gear Horizontal
+      width 16.6%
+      justifyContent center
+      alignItems center
+      Text
+        color #323232
+        fontFamily Montserrat
+        fontSize 80%
+        fontWeight 500
+        text Gear
 
 
-      Props Horizontal
-        width 16.6%
-        justifyContent center
-        alignItems center
-        Text
-          color #323232
-          fontFamily Montserrat
-          fontSize 80%
-          fontWeight 500
-          text Props
+    Props Horizontal
+      width 16.6%
+      justifyContent center
+      alignItems center
+      Text
+        color #323232
+        fontFamily Montserrat
+        fontSize 80%
+        fontWeight 500
+        text Props
 
 
 
-    MainDisplay Horizontal
-      width 100%
-      height 30%
-      backgroundColor #999999
+  MainDisplay Horizontal
+    width 100%
+    height 30%
+    SlideShow Horizontal
+      flexBasis auto
+      flexShrink 1
+      onWhen <isSlideShowSelected
+      justifyContent center
+      flexGrow 1
+      Text
+        color #323232
+        fontFamily Montserrat
+        fontSize 16
+        fontWeight 400
+        text SlideShow View
+        alignSelf center
 
-    MainDisplayControl Horizontal
-      width 100%
-      height 7%
-      backgroundColor #000000
 
-    UserExtendedCard Vertical
-      overflowX scroll
-      width 100%
-      height 40%
-      backgroundColor #666666
+    Video Horizontal
+      flexBasis auto
+      flexGrow 1
+      flexShrink 1
+      onWhen <isVideoSelected
+      justifyContent center
+      Text
+        color #323232
+        fontFamily Montserrat
+        fontSize 16
+        fontWeight 400
+        text Video View
+        alignSelf center
 
-    FooterNav Horizontal
-      width 100%
-      height 8%
-      borderTopWidth 1
-      borderTopStyle solid
-      borderTopColor #666666
-      backgroundColor #3c3c3c
+
+    MapView Horizontal
+      flexBasis auto
+      flexGrow 1
+      flexShrink 1
+      onWhen <isMapViewSelected
+      justifyContent center
+      Text
+        color #323232
+        fontFamily Montserrat
+        fontSize 16
+        fontWeight 400
+        text Map View
+        alignSelf center
+
+
+
+  MainDisplayControl Horizontal
+    width 100%
+    height 7%
+    justifyContent spaceBetween
+    PhotosSeletectButton Horizontal
+      width 30%
+      height 100%
+      alignItems center
+      justifyContent center
+      PhotoCamera
+        width 90%
+        height 90%
+        alignSelf auto
+
+
+    VideoSelectButton Horizontal
+      width 31%
+      height 100%
+      Link
+        width 90%
+        height 90%
+        alignSelf auto
+
+
+    MapSelectButton Horizontal
+      width 31%
+      height 100%
+      Placeholder
+        width 90%
+        height 90%
+        alignSelf auto
+
+
+
+  UserExtendedCard Vertical
+    overflowX scroll
+    width 100%
+    height 40%
+    backgroundColor #666666
+
+  FooterNav Horizontal
+    width 100%
+    height 8%
+    borderTopWidth 1
+    borderTopStyle solid
+    borderTopColor #666666
+    backgroundColor #3c3c3c
