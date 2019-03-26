@@ -46,7 +46,7 @@ App Vertical
         onChange <
         value <
         width 80%
-        height 85%
+        height 35%
         paddingBottom 4
         marginTop auto
         marginBottom auto
@@ -154,8 +154,9 @@ App Vertical
       onWhen <isSlideShowSelected
       justifyContent center
       flexGrow 1
+      backgroundColor #000000
       Text
-        color #323232
+        color #ffffff
         fontFamily Montserrat
         fontSize 16
         fontWeight 400
@@ -169,8 +170,9 @@ App Vertical
       flexShrink 1
       onWhen <isVideoSelected
       justifyContent center
+      backgroundColor #1b0097
       Text
-        color #323232
+        color #ffffff
         fontFamily Montserrat
         fontSize 16
         fontWeight 400
@@ -184,8 +186,9 @@ App Vertical
       flexShrink 1
       onWhen <isMapViewSelected
       justifyContent center
+      backgroundColor #003900
       Text
-        color #323232
+        color #dbdbdb
         fontFamily Montserrat
         fontSize 16
         fontWeight 400
@@ -198,11 +201,12 @@ App Vertical
     width 100%
     height 7%
     justifyContent spaceBetween
-    PhotosSeletectButton Horizontal
+    SlideShowSeletectButton Horizontal
       width 30%
       height 100%
       alignItems center
       justifyContent center
+      onClick <openSlideShowView
       PhotoCamera
         width 90%
         height 90%
@@ -212,7 +216,8 @@ App Vertical
     VideoSelectButton Horizontal
       width 31%
       height 100%
-      Link
+      onClick <openVideoView
+      Monitor
         width 90%
         height 90%
         alignSelf auto
@@ -221,6 +226,7 @@ App Vertical
     MapSelectButton Horizontal
       width 31%
       height 100%
+      onClick <openMapView
       Placeholder
         width 90%
         height 90%
@@ -233,6 +239,11 @@ App Vertical
     width 100%
     height 40%
     backgroundColor #666666
+    Vertical
+      flexBasis auto
+      flexGrow 1
+      flexShrink 1
+
 
   FooterNav Horizontal
     width 100%
@@ -240,4 +251,52 @@ App Vertical
     borderTopWidth 1
     borderTopStyle solid
     borderTopColor #666666
-    backgroundColor #3c3c3c
+    backgroundColor #ffffff
+    Horizontal
+      width 20%
+      height 100%
+      justifyContent center
+      alignItems center
+      Avatar
+        height 80%
+        width 80%
+
+
+    Horizontal
+      width 20%
+      height 100%
+      justifyContent center
+      alignItems center
+      Book
+        width 80%
+        height 80%
+
+
+    Horizontal
+      width 20%
+      height 100%
+      justifyContent center
+      alignItems center
+      Chat1
+        height 80%
+        width 80%
+
+
+    Horizontal
+      width 20%
+      height 100%
+      justifyContent center
+      alignItems center
+      Envelope
+        height 80%
+        width 80%
+
+
+    Horizontal
+      width 20%
+      height 100%
+      justifyContent center
+      alignItems center
+      Like
+        height 80%
+        width 80%
